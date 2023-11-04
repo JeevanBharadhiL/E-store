@@ -1,0 +1,287 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    font-size: 10px;
+}
+
+.header-link {
+    padding: 2rem;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px; 
+}
+
+
+move {
+    background-color: #e3e8a1e2;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap; 
+
+    display: flex;
+    overflow-x: hidden;
+}
+
+.image-box {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+    animation: scrollImages 16s linear infinite; 
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#back-to-home {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+#cart-page {
+    display: none;
+}
+
+.cart-item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 24px; 
+    }
+
+    .header-link {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    move {
+        flex-direction: column;
+    }
+
+    .image-box {
+        margin-right: 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 200px; 
+    margin: 15px; 
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 30px); 
+    }
+}
+
+
+
+/* about page */
+
+.about-container {
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: auto;
+    max-height: auto;
+    height: 90%;
+    width: 98.5%;
+    font-size: 20px; 
+    text-align: justify; 
+}
+
+
+.complaint-container {
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    max-height: 550px;
+    width: 100%;
+    margin: 20px auto; 
+    font-size: 20px;
+}
+
+.complaint-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.complaint-form label {
+    font-weight: bold;
+}
+
+.complaint-form input,
+.complaint-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.complaint-form button {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complaint-form button:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,148 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="icon.jpg" alt="icon" style="width: 400px; height: 120px;">
+        </h1>
+        <nav class="header-nav">
+            <a href="index.html" class="header-link" id="back-to-home">Home</a>
+            <a href="about.html" class="header-link">About us</a>
+            <a href="cart.html" id="cart-icon" class="header-link">
+                <img src="shopping-cart.png" alt="Cart" style="width: 70px; height: 90px;">
+                <span style="margin-right: 9px; font-size: 40px;">Cart</span>
+            </a>
+        </nav>
+    </header>
+    
+
+    <div class="search-container" style="display: flex; align-items: center; justify-content: center;">
+        <input type="text" id="search-input" placeholder="Search products..." style="font-size: 30px; padding: 10px; border: 5px solid #ccc;">
+        <button onclick="searchProducts()" style="font-size: 30px; padding: 10px; border: 5px solid #4caf50; background-color: #4caf50; color: #fff;">Search</button>
+    </div>
+    
+     
+    
+    <style>
+        main {
+            display: flex;
+            overflow-x: auto;
+            
+        }
+
+        .image-box {
+            flex: 0 0 auto;
+            margin-right: 20px; 
+        }
+
+        .image-box img {
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+ <move>
+        <div class="image-box">
+            <img src="off.jpg" alt="Image 1" style="width: 1000px; height: 150px;">
+        </div>
+        <div class="image-box">
+            <img src="off1.jpg" alt="Image 2" style="width: 900px; height: 150px;">
+        </div>
+       
+        
+      
+ </move>
+
+
+
+<title>Product Grid</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="product">
+  
+                <img src="product1.webp" alt="product 1">
+                <div class="product-info">
+                    <h3>boAt Airdopes Alpha </h3>
+                    <p class="price">$14.43</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 1', 14.43)">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="product2.webp" alt="Product 2">
+                <div class="product-info">
+                    <h3>APPLE AirPods Pro (2nd generation)</h3>
+                    <p class="price">$29.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="product3.webp" alt="Product 3">
+                <div class="product-info">
+                    <h3>Apple Watch SE (2nd Gen) Smart Watch  </h3>
+                    <p class="price">$300.63</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 3', 300.63)">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="Product4.webp" alt="Product 4">
+                <div class="product-info">
+                    <h3>boAt Lunar Orb Smart Watch</h3>
+                    <p class="price">$30.06</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 4', 30.06)">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="Product 5.webp" alt="Product 5">
+                <div class="product-info">
+                    <h3>Samsung Galaxy Z Fold 5</h3>
+                    <p class="price">$2224.66</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 5', 2224.66)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="Product6.webp" alt="Product 6">
+                <div class="product-info">
+                    <h3>Apple iPhone 14</h3>
+                    <p class="price">$1683.53</p>
+                    <button class="add-to-cart" onclick="addToCart('Product 6', 1683.53)">Add to Cart</button>
+                </div>
+            </div>
+
+
+     </main>   
+     
+     <div id="cart-page"> 
+        
+    </div>
+ </div>
+
+    <footer>
+        <p>&copy;Jeevan Bharadhi L </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
